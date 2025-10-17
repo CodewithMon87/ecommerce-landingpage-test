@@ -1,0 +1,23 @@
+/* Global Colors  */
+$primary-color: #f5820f;
+$secondary-color: #29d837;
+$text-color: #333;
+$text-color-white: #fff;
+$text-color-black: #000;
+
+/* BG Colors Start  */
+$bg-color-white: #fff;
+$bg-color-yellow: #ffba00;
+$bg-color-dark-grey: #222430;
+$bg-color-light-grey: #222430d9;
+
+// Font Families
+$font-inter: 'Inter', sans-serif;
+$font-roboto-mono: 'Roboto Mono', monospace;
+
+/* Hero Gradient  */
+$hero-gradient: linear-gradient(
+  232deg,
+  rgba(70, 78, 112, 1) 0%,
+  rgba(32, 55, 70, 1) 100%
+);

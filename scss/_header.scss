@@ -1,0 +1,136 @@
+.site-header {
+  height: 65px; /* fixed header height */
+  display: flex;
+  align-items: center; /* vertical centering */
+  background-color: $bg-color-white; /* optional — keeps it clean */
+  padding: 0 1rem; /* some horizontal breathing space */
+  box-sizing: border-box;
+
+  /* Remove Foundation's default style */
+  /* Reset Foundation's button style */
+  button.hamburger {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    width: 32px;
+    height: 22px;
+    top: 7px;
+    margin-right: 10px;
+  }
+
+  /* 3-line hamburger icon */
+  .hamburger::before,
+  .hamburger::after,
+  .hamburger span {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  /* Top line */
+  .hamburger::before {
+    top: 0;
+  }
+
+  /* Middle line */
+  .hamburger span {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  /* Bottom line */
+  .hamburger::after {
+    bottom: 0;
+  }
+
+  /* Optional hover color */
+  .hamburger:hover::before,
+  .hamburger:hover span,
+  .hamburger:hover::after {
+    background-color: #333;
+  }
+
+  /* Optional hover effect */
+  .custom-menu:hover::before,
+  .custom-menu:hover span,
+  .custom-menu:hover::after {
+    background-color: #333;
+  }
+
+  .off-canvas {
+    background-color: #203746;
+    padding-top: 2rem;
+
+    ul.menu li a {
+      color: $text-color-white;
+      font-size: 1.1rem;
+      padding: 1rem;
+      display: block;
+      &:hover {
+        background-color: lighten(#203746, 10%);
+      }
+    }
+  }
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.get-started-btn {
+  width: 201px;
+  height: 46px;
+  border-radius: 35px;
+  background-color: $bg-color-dark-grey;
+  color: $text-color-white;
+  font-family: $font-inter;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background-color: $bg-color-light-grey;
+  }
+}
+
+.cart-icon {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.announcement-bar {
+  background-color: $bg-color-yellow; // 💙 your brand color or any you like
+
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  letter-spacing: 0.3px;
+
+  p {
+    margin: 0; // remove default <p> spacing
+    text-transform: uppercase;
+    font-family: $font-roboto-mono;
+    font-size: 12px;
+    color: $text-color-black;
+    letter-spacing: 0.33px;
+    font-weight: 700;
+  }
+}

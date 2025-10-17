@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/* Global Colors  */
+/* BG Colors Start  */
+/* Hero Gradient  */
+.site-header {
+  height: 65px; /* fixed header height */
+  display: flex;
+  align-items: center; /* vertical centering */
+  background-color: #fff; /* optional — keeps it clean */
+  padding: 0 1rem; /* some horizontal breathing space */
+  box-sizing: border-box;
+  /* Remove Foundation's default style */
+  /* Reset Foundation's button style */
+  /* 3-line hamburger icon */
+  /* Top line */
+  /* Middle line */
+  /* Bottom line */
+  /* Optional hover color */
+  /* Optional hover effect */
+}
+.site-header button.hamburger {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  width: 32px;
+  height: 22px;
+  top: 7px;
+  margin-right: 10px;
+}
+.site-header .hamburger::before,
+.site-header .hamburger::after,
+.site-header .hamburger span {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+.site-header .hamburger::before {
+  top: 0;
+}
+.site-header .hamburger span {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.site-header .hamburger::after {
+  bottom: 0;
+}
+.site-header .hamburger:hover::before,
+.site-header .hamburger:hover span,
+.site-header .hamburger:hover::after {
+  background-color: #333;
+}
+.site-header .custom-menu:hover::before,
+.site-header .custom-menu:hover span,
+.site-header .custom-menu:hover::after {
+  background-color: #333;
+}
+.site-header .off-canvas {
+  background-color: #203746;
+  padding-top: 2rem;
+}
+.site-header .off-canvas ul.menu li a {
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 1rem;
+  display: block;
+}
+.site-header .off-canvas ul.menu li a:hover {
+  background-color: rgb(48, 82.5, 105);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.get-started-btn {
+  width: 201px;
+  height: 46px;
+  border-radius: 35px;
+  background-color: #222430;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background 0.3s ease;
+}
+.get-started-btn:hover {
+  background-color: rgba(34, 36, 48, 0.8509803922);
+}
+
+.cart-icon {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.cart-icon:hover {
+  transform: scale(1.1);
+}
+
+.announcement-bar {
+  background-color: #ffba00;
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  letter-spacing: 0.3px;
+}
+.announcement-bar p {
+  margin: 0;
+  text-transform: uppercase;
+  font-family: "Roboto Mono", monospace;
+  font-size: 12px;
+  color: #000;
+  letter-spacing: 0.33px;
+  font-weight: 700;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+}
+
+p {
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.hero {
+  background: linear-gradient(232deg, rgb(70, 78, 112) 0%, rgb(32, 55, 70) 100%);
+  color: white;
+  padding: 5rem 1rem;
+}
+.hero h1 {
+  text-align: left;
+}
+.hero p {
+  color: #fff;
+  margin-top: 1rem;
+}
+.hero .button.primary {
+  background-color: #1ca9de;
+}
+.hero .button.primary:hover {
+  background-color: rgb(22.288, 134.524, 176.712);
+}
+
+.site-footer {
+  background-color: #29d837;
+  color: white;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+.grid-container-wide {
+  width: 152rem;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}/*# sourceMappingURL=main.css.map */

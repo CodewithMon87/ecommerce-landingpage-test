@@ -1,0 +1,42 @@
+// Example usage
+body {
+  font-family: $font-roboto-mono;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-inter;
+  font-weight: 900; // ensures bold weight
+}
+
+p {
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.hero {
+  // section background example
+  background: $hero-gradient;
+  color: white;
+  padding: 5rem 1rem;
+
+  h1 {
+    text-align: left;
+  }
+
+  p {
+    color: #fff;
+    margin-top: 1rem;
+  }
+
+  .button.primary {
+    background-color: #1ca9de;
+    &:hover {
+      background-color: darken(#1ca9de, 10%);
+    }
+  }
+}
