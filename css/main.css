@@ -687,8 +687,10 @@ section.product-set .add-to-cart-btn:hover {
 }
 .routine-checklist li {
   position: relative;
-  padding-left: 30px; /* space for the icon */
-  margin-bottom: 25px;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(29, 60, 52, 0.1);
+  width: 73%;
 }
 .routine-checklist li::before {
   content: "";
@@ -920,11 +922,213 @@ section.product-set .add-to-cart-btn:hover {
   text-transform: uppercase;
 }
 
-.site-footer {
-  background-color: #29d837;
-  color: white;
-  padding: 1.5rem 0;
+.fan-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.fan-card .card-image {
+  position: relative;
+  /* Center play button */
+  /* ✅ Mute icon at top-right */
+  /* Bottom overlay content */
+}
+.fan-card .card-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+  display: block;
+}
+.fan-card .card-image .play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  padding: 0.8rem;
+  transition: transform 0.3s ease;
+}
+.fan-card .card-image .play-icon img {
+  width: 24px;
+  height: 24px;
+}
+.fan-card .card-image .play-icon:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+.fan-card .card-image .mute-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.fan-card .card-image .mute-icon img {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+.fan-card .card-image .mute-icon:hover {
+  background: rgb(255, 255, 255);
+}
+.fan-card .card-image .card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  margin: 12px;
+}
+.fan-card .card-image .card-content .card-info {
+  text-align: left;
+}
+.fan-card .card-image .card-content .card-info h4 {
+  font-family: "AberMono-Bold", monospace;
+  font-size: 1rem;
+  color: #1b1d2a;
+  margin: 0;
+}
+.fan-card .card-image .card-content .card-info .price {
   font-size: 0.9rem;
+  color: #555;
+  margin: 0.2rem 0 0;
+}
+.fan-card .card-image .card-content .add-btn {
+  background: #1b1d2a;
+  color: #fff;
+  font-size: 0.85rem;
+  border: none;
+  border-radius: 30px;
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.fan-card .card-image .card-content .add-btn:hover {
+  background: #000;
+}
+
+section.fans-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+h2.section-title.text-center {
+  margin-bottom: 40px;
+}
+
+.site-footer {
+  background: #1f2029;
+  color: #fff;
+  padding: 2rem 5rem;
+  font-family: "AberMono-Bold", monospace;
+}
+.site-footer a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+.site-footer a:hover {
+  opacity: 1;
+}
+.site-footer .footer-top .footer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+.site-footer .footer-top .footer-header .footer-text h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.site-footer .footer-top .footer-header .footer-text p {
+  font-size: 0.875rem;
+  opacity: 0.8;
+}
+.site-footer .footer-top .footer-header .footer-logo img {
+  width: 60px;
+}
+.site-footer .footer-top .newsletter-form .newsletter-wrapper {
+  position: relative;
+}
+.site-footer .footer-top .newsletter-form .newsletter-wrapper input {
+  width: 100%;
+  padding: 2.2rem 7rem 1.2rem 1rem;
+  border: none;
+  background: #e7eff0;
+  color: #1b1d2a;
+  font-size: 0.9rem;
+  outline: none;
+}
+.site-footer .footer-top .newsletter-form .newsletter-wrapper button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  border: none;
+  background: #1b1d2a;
+  color: #fff;
+  padding: 0 1.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border: 8px solid #fff;
+}
+.site-footer .footer-top .newsletter-form .newsletter-wrapper button:hover {
+  background: #000;
+}
+.site-footer .footer-middle {
+  margin-bottom: 2rem;
+}
+.site-footer .footer-middle .footer-socials {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.site-footer .footer-middle .footer-socials a img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #e7eff0;
+  padding: 0.4rem;
+}
+.site-footer .footer-middle h5 {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+.site-footer .footer-middle ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.site-footer .footer-middle ul li {
+  margin-bottom: 0.4rem;
+}
+.site-footer .footer-bottom {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.7);
+  padding-top: 1rem;
+}
+.site-footer .footer-bottom .disclaimer {
+  max-width: 400px;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  font-size: 0.7rem;
+  opacity: 0.7;
+  line-height: 1.4;
+  border: 1px solid;
 }
 
 .grid-container-wide {
