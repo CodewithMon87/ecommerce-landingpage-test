@@ -182,6 +182,7 @@ h6 {
 .routine-section {
   background-color: $bg-light;
   padding-top: 30px;
+  border-bottom: 1px solid #000;
 
   .routine-header {
     font-family: $font-roboto-mono;
@@ -442,5 +443,34 @@ hr.steps-end-line {
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+
+.benefits-container {
+  margin-top: 50px;
+
+  h2 {
+    font-size: 50px;
+    color: $dark-color;
+    margin-bottom: 0px;
+  }
+  p {
+    color: $dark-color;
+  }
+}
+
+// Cards Section
+.card-container {
+  img {
+    margin-bottom: 20px;
+  }
+  h4 {
+    font-size: 23px;
+    color: $dark-color;
+    min-height: 64px;
+  }
+  p {
+    font-size: 15px;
+    padding-top: 10px;
   }
 }

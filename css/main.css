@@ -306,6 +306,7 @@ h6 {
 .routine-section {
   background-color: #eff7fa;
   padding-top: 30px;
+  border-bottom: 1px solid #000;
 }
 .routine-section .routine-header {
   font-family: "Roboto Mono", monospace;
@@ -547,6 +548,31 @@ hr.steps-end-line {
     transform: translateX(-100%);
   }
 }
+.benefits-container {
+  margin-top: 50px;
+}
+.benefits-container h2 {
+  font-size: 50px;
+  color: rgb(46, 48, 46);
+  margin-bottom: 0px;
+}
+.benefits-container p {
+  color: rgb(46, 48, 46);
+}
+
+.card-container img {
+  margin-bottom: 20px;
+}
+.card-container h4 {
+  font-size: 23px;
+  color: rgb(46, 48, 46);
+  min-height: 64px;
+}
+.card-container p {
+  font-size: 15px;
+  padding-top: 10px;
+}
+
 .site-footer {
   background-color: #29d837;
   color: white;
