@@ -4,6 +4,10 @@ $secondary-color: #29d837;
 $text-color: #333;
 $text-color-white: #fff;
 $text-color-black: #000;
+$text-color-light: #fffaf6;
+
+// Hover BG Color
+$bg-color-yellow-hover: #e6a700;
 
 /* BG Colors Start  */
 $bg-color-white: #fff;
@@ -14,6 +18,8 @@ $bg-color-light-grey: #222430d9;
 // Font Families
 $font-inter: 'Inter', sans-serif;
 $font-roboto-mono: 'Roboto Mono', monospace;
+$font-roboto-mono-regular: 'Roboto Mono', monospace; // weight 400
+$font-roboto-mono-bold: 'Roboto Mono', monospace; // weight 700
 
 /* Hero Gradient  */
 $hero-gradient: linear-gradient(

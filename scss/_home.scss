@@ -1,6 +1,7 @@
 // Example usage
 body {
   font-family: $font-roboto-mono;
+  overflow-x: hidden;
 }
 
 h1,
@@ -13,30 +14,150 @@ h6 {
   font-weight: 900; // ensures bold weight
 }
 
-p {
-  color: #fff;
-  margin-top: 1rem;
-}
-
 .hero {
-  // section background example
   background: $hero-gradient;
   color: white;
-  padding: 5rem 1rem;
+  position: relative;
 
   h1 {
     text-align: left;
+    font-family: $font-inter;
+    font-size: 64px;
+    color: $text-color-light;
+    font-weight: 900;
+    letter-spacing: -1.07px;
+    text-transform: uppercase;
+    line-height: 60px;
+
+    @media (max-width: 430px) {
+      font-size: 38px;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+
+      br {
+        display: none;
+      }
+    }
+    @media (max-width: 768px) {
+      font-size: 38px;
+      color: $text-color-light;
+      font-weight: 900;
+      letter-spacing: -1.07px;
+      text-transform: uppercase;
+      line-height: 43px;
+    }
   }
 
   p {
-    color: #fff;
+    font-family: $font-roboto-mono-regular;
+    color: $text-color-white;
+    font-weight: 400;
     margin-top: 1rem;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: left;
+
+    @media (max-width: 430px) {
+      font-size: 14px;
+      text-align: center;
+    }
   }
 
-  .button.primary {
-    background-color: #1ca9de;
+  .hero-cta-btn {
+    width: 314px;
+    height: 58px;
+    border-radius: 35px;
+    background-color: $bg-color-yellow;
+    color: $text-color-black;
+    font-family: $font-inter;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 0.3s ease;
+
     &:hover {
-      background-color: darken(#1ca9de, 10%);
+      background-color: $bg-color-yellow-hover;
     }
+  }
+
+  // ✅ Hero image overlap styling
+  .hero-img {
+    width: 160%;
+    max-width: 709px;
+    position: absolute;
+    top: -343px;
+    left: -255px;
+    z-index: 1;
+    transition: all 0.3s ease;
+
+    @media (max-width: 430px) {
+      display: none !important; // ✅ hide right hero image on mobile
+    }
+
+    @media (max-width: 768px) {
+      display: block; // ✅ hide right hero image on mobile
+      top: -166px;
+      left: -61px;
+      width: 137%;
+    }
+  }
+
+  .hero-img-mobile {
+    display: none;
+
+    @media (max-width: 430px) {
+      display: block; // ✅ hide right hero image on mobile
+    }
+  }
+}
+
+.hero-container {
+  position: relative;
+}
+
+.comments-container {
+  margin-top: 8rem;
+
+  img {
+    max-width: 100%;
+  }
+
+  p {
+    font-family: $font-roboto-mono-regular;
+    color: $text-color-white;
+    font-size: 16px;
+    margin: 0.7rem 0;
+  }
+
+  .comment-author {
+    display: inline-flex; // ✅ makes image + text inline
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 1rem;
+
+    .author-img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    p {
+      margin: 0;
+      font-weight: 500;
+      font-family: $font-inter;
+      color: $text-color-light;
+    }
+  }
+
+  @media (max-width: 430px) {
+    margin-top: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 2rem;
   }
 }
