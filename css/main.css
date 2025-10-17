@@ -145,11 +145,12 @@ h6 {
   background: linear-gradient(232deg, rgb(70, 78, 112) 0%, rgb(32, 55, 70) 100%);
   color: white;
   position: relative;
+  padding-top: 30px;
 }
 .hero h1 {
   text-align: left;
   font-family: "Inter", sans-serif;
-  font-size: 74px;
+  font-size: 59px;
   color: #fffaf6;
   font-weight: 900;
   letter-spacing: -1.07px;
@@ -241,7 +242,7 @@ h6 {
 }
 
 .comments-container {
-  margin-top: 8rem;
+  margin-top: 4rem;
 }
 .comments-container img {
   max-width: 100%;
@@ -295,8 +296,93 @@ h6 {
 }
 @media screen and (min-width: 1024px) {
   .padded-row {
-    padding: 60px 102px 20px 102px;
+    padding: 5px 102px 20px 102px;
   }
+}
+
+.routine-section {
+  background-color: #eff7fa;
+  padding-top: 30px;
+}
+.routine-section .routine-header {
+  font-family: "Roboto Mono", monospace;
+  background-color: #ffba00;
+  color: #000;
+  border-radius: 28.5px;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 24px;
+  padding: 10px;
+}
+.routine-section .routine-padding {
+  padding-top: 50px;
+}
+.routine-section p {
+  padding-top: 20px;
+  color: rgb(46, 48, 46);
+  font-family: "Roboto Mono", monospace;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  padding-right: 69px;
+  padding-bottom: 15px;
+}
+.routine-section span {
+  text-decoration: underline;
+}
+.routine-section h2 {
+  color: rgb(46, 48, 46);
+  text-transform: uppercase;
+  line-height: 65px;
+  font-size: 80px;
+  font-weight: 900;
+  letter-spacing: -1.33px;
+}
+.routine-section hr {
+  width: 91%;
+  border: 2px solid rgb(29, 60, 52);
+  opacity: 0.1;
+  margin: auto 0;
+}
+.routine-section .routine-checklist {
+  list-style: none; /* remove default bullets */
+  padding-left: 0;
+  margin-left: 0px;
+  margin-top: 30px;
+}
+.routine-section .routine-checklist li {
+  position: relative;
+  padding-left: 30px; /* space for the icon */
+  margin-bottom: 25px;
+}
+.routine-section .routine-checklist li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px; /* icon width */
+  height: 20px; /* icon height */
+  background: url("../images/checklist.svg") no-repeat center center;
+  background-size: contain;
+}
+.routine-section .feature-container {
+  background-color: #fff;
+  border-radius: 52px;
+  padding: 35px;
+  margin-top: 50px;
+}
+.routine-section .feature-row .cell {
+  display: flex;
+  align-items: center; /* vertically centers text with image */
+  justify-content: center; /* centers the whole content horizontally */
+  gap: 10px; /* space between image and text */
+  text-align: left; /* optional: align text left */
+}
+.routine-section .feature-row .feature-img {
+  width: 135px;
+  height: 135px;
 }
 
 .site-footer {
@@ -333,4 +419,4 @@ h6 {
     width: auto;
     text-align: center;
   }
-}/*# sourceMappingURL=main.css.map */
+}

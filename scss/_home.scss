@@ -18,11 +18,12 @@ h6 {
   background: $hero-gradient;
   color: white;
   position: relative;
+  padding-top: 30px;
 
   h1 {
     text-align: left;
     font-family: $font-inter;
-    font-size: 74px;
+    font-size: 59px;
     color: $text-color-light;
     font-weight: 900;
     letter-spacing: -1.07px;
@@ -116,7 +117,7 @@ h6 {
 }
 
 .comments-container {
-  margin-top: 8rem;
+  margin-top: 4rem;
 
   img {
     max-width: 100%;
@@ -171,6 +172,102 @@ h6 {
   }
 
   @media screen and (min-width: 1024px) {
-    padding: 60px 102px 20px 102px;
+    padding: 5px 102px 20px 102px;
+  }
+}
+// Routine SCSS
+.routine-section {
+  background-color: $bg-light;
+  padding-top: 30px;
+
+  .routine-header {
+    font-family: $font-roboto-mono;
+    background-color: $bg-color-yellow;
+    color: $text-color-black;
+    border-radius: 28.5px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 24px;
+    padding: 10px;
+  }
+
+  .routine-padding {
+    padding-top: 50px;
+  }
+  p {
+    padding-top: 20px;
+    color: $dark-color;
+    font-family: $font-roboto-mono-regular;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    padding-right: 69px;
+    padding-bottom: 15px;
+  }
+
+  span {
+    text-decoration: underline;
+  }
+  h2 {
+    color: $dark-color;
+    text-transform: uppercase;
+    line-height: 65px;
+    font-size: 80px;
+    font-weight: 900;
+    letter-spacing: -1.33px;
+  }
+
+  hr {
+    width: 91%;
+    border: 2px solid rgb(29, 60, 52);
+    opacity: 0.1;
+    margin: auto 0;
+  }
+
+  .routine-checklist {
+    list-style: none; /* remove default bullets */
+    padding-left: 0;
+    margin-left: 0px;
+    margin-top: 30px;
+
+    li {
+      position: relative;
+      padding-left: 30px; /* space for the icon */
+      margin-bottom: 25px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px; /* icon width */
+        height: 20px; /* icon height */
+        background: url("../images/checklist.svg") no-repeat center center;
+        background-size: contain;
+      }
+    }
+  }
+
+  //  Feature Container
+
+  .feature-container {
+    background-color: $bg-color-white;
+    border-radius: 52px;
+    padding: 35px;
+    margin-top: 50px;
+  }
+  .feature-row .cell {
+    display: flex;
+    align-items: center; /* vertically centers text with image */
+    justify-content: center; /* centers the whole content horizontally */
+    gap: 10px; /* space between image and text */
+    text-align: left; /* optional: align text left */
+  }
+
+  .feature-row .feature-img {
+    width: 135px;
+    height: 135px;
   }
 }
