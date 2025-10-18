@@ -582,8 +582,6 @@ section.product-set {
 .product-image-container {
   position: relative;
   .circle-bg {
-    width: 300px;
-    height: 300px;
     background: #f0f3f8;
     border-radius: 50%;
     margin: 0 auto 1rem;
@@ -768,6 +766,16 @@ section.product-set {
       margin-bottom: 0.5rem;
     }
 
+    @media (max-width: 767px) {
+      h2 {
+        font-size: 50px;
+      }
+
+      h3 {
+        width: 100%;
+      }
+    }
+
     .subtext {
       color: #dcdcdc;
       font-size: 1rem;
@@ -810,10 +818,13 @@ section.product-set {
   @media (max-width: 767px) {
     .formula {
       text-align: center;
+      padding: 0px 10px;
+    }
 
-      h3 {
-        margin-top: 1.5rem;
-      }
+    h3 {
+      margin-top: 1.5rem;
+      width: 100% !important;
+      font-size: 40px !important;
     }
   }
 }
